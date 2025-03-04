@@ -1,9 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int function(int x){
-	x=x-2;
-	x=function(x);
+int function(int *x){
+	*x=*x-2;
 	return x;
 }
 
